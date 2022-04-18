@@ -11,7 +11,9 @@ function App() {
           as a <span className="blueColor">Demo User</span>.
         </div>
       </div>
-      <div className="loginSide">hi</div>
+      <div className="loginSide">
+        <div className="registerContent"></div>
+      </div>
     </div>
   );
 }

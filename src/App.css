@@ -33,15 +33,24 @@ html {
   border: 1px solid #eeedf2;
   border-radius: 8px;
   padding: 48px;
+  animation-name: smallSize;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
 }
 
 .loginSide {
   height: 650px;
-  padding: 24px;
+  width: 0px;
+  padding: 48px;
   border: 1px solid #eeedf2;
   border-left: none;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  animation-name: bigSize;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
 }
 
 .smallText {
@@ -52,4 +61,16 @@ html {
 .blueColor {
   color: rgb(66, 133, 244);
   cursor: pointer;
+}
+
+@keyframes smallSize {
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes bigSize {
+  100% {
+    width: 450px;
+  }
 }
