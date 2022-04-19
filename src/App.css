@@ -33,10 +33,10 @@ html {
   border: 1px solid #eeedf2;
   border-radius: 8px;
   padding: 48px;
-  animation-name: smallSize;
+  /* animation-name: smallSize; */
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .loginSide {
@@ -47,15 +47,16 @@ html {
   border-left: none;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  animation-name: bigSize;
+  /* animation-name: bigSize; */
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .smallText {
   font-size: 14px;
   line-height: 1.4;
+  margin-bottom: 24px;
 }
 
 .blueColor {
@@ -73,4 +74,52 @@ html {
   100% {
     width: 450px;
   }
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #eeedf2;
+  outline: none;
+  border-radius: 4px;
+  transition-duration: 0.3s;
+  font-size: 14px;
+  background-position: 18px 51%;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  padding-left: 52px;
+}
+
+input:focus {
+  border: 1px solid rgb(66, 133, 244);
+  box-shadow: 0 0 0 1px rgb(66, 133, 244);
+  
+}
+
+.displayTxt {
+  font-size: small;
+  letter-spacing: 1px;
+  color: #5f5c5c;
+  margin: 9px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+#emailUsn {
+  background-image: url(img/mail.svg);
+}
+
+.pwInputCont {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#passWrd {
+  width: unset;
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  background-image: url(img/key.svg);
 }
