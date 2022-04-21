@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Mon&display=swap');
+
+:root {
+  --mail-bd-color: rgb(66, 133, 244);
+  --mail-tr-color: rgba(66, 133, 244, 0.2);
+  --mail-in-color: #eeedf2;
+  --mail-bx-width: 0px;
+
+  --pass-bd-color: rgb(66, 133, 244);
+  --pass-tr-color: rgba(66, 133, 244, 0.2);
+  --pass-in-color: #eeedf2;
+  --pass-bx-width: 0px;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #141414;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  background-color: #fafbfd;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.loginCont {
+  width: 470px;
+  /* height: 700px; */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 25px 3px #eeedf2;
+  border-radius: 8px;
+  padding: 48px;
+}
+
+
+
+.smallText {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 36px;
+  margin-bottom: 9px;
+  padding: 0 14px;
+  text-align: center;
+}
+
+.blueColor {
+  color: rgb(66, 133, 244);
+  cursor: pointer;
+}
+
+input, .numInp, .lgBtn {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #eeedf2;
+  outline: none;
+  border-radius: 4px;
+  transition-duration: 0.3s;
+  font-size: 14px;
+  background-position: 18px 51%;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  padding-left: 52px;
+}
+
+.authPanel {
+  width: 100%;
+  display: flex;
+}
+
+#sndBtn, .numInp {
+  width: unset;
+  padding: 20px 9px;
+  background-color: white;
+  font-size: small;
+  letter-spacing: 1px;
+  color: #5f5c5c;
+  font-weight: 500;
+  text-align: center;
+}
+
+.elCont {
+  padding: 6px;
+  padding-left: 0;
+  /* width: min-content; */
+}
+
+
+
+#nameUsn:focus {
+  border: 1px solid rgb(66, 133, 244);
+  box-shadow: 0 0 0 1px rgb(66, 133, 244), 0 0 0 5px rgba(66, 133, 244, 0.2);
+  
+}
+
+#emailUsn:focus {
+  border: 1px solid var(--mail-bd-color);
+  box-shadow: 0 0 0 1px var(--mail-bd-color), 0 0 0 5px var(--mail-tr-color);
+}
+
+#passWrd:focus {
+  border: 1px solid var(--pass-bd-color);
+  box-shadow: 0 0 0 1px var(--pass-bd-color), 0 0 0 5px var(--pass-tr-color);
+}
+
+
+.displayTxt {
+  font-size: small;
+  letter-spacing: 1px;
+  color: #5f5c5c;
+  margin: 9px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+#emailUsn {
+  background-image: url(img/mail.svg);
+  box-shadow: 0 0 0 var(--mail-bx-width) var(--mail-bd-color);
+  border: 1px solid var(--mail-in-color);
+}
+
+#nameUsn {
+  background-image: url(img/person.svg);
+}
+
+#passWrd {
+  background-image: url(img/key.svg);
+  box-shadow: 0 0 0 var(--pass-bx-width) var(--pass-bd-color);
+  border: 1px solid var(--pass-in-color);
+}
+
+.lgBtn, #submitBtn {
+  background-color: #fff;
+  width: unset;
+  padding: 20px;
+  /* padding-bottom: 18px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: small;
+  letter-spacing: 1px;
+  color: #5f5c5c;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+#googleBtn, #hiddenBtn {
+  margin-right: 9px;
+}
+
+
+#submitBtn {
+  width: 100%;
+  border: 1px solid #eeedf2;
+  border-radius: 4px;
+  padding: 22px 20px;
+}
+
+
+
+#submitBtn:hover, #googleBtn:hover, #githubBtn:hover {
+  background-color: #fafafd;
+}
+
+#submitBtn:active, #googleBtn:active, #githubBtn:active {
+  background-color: #f5f5f8;
+}
+
+#submitBtn {
+  margin-top: 18px;
+  flex-grow: 1;
+}
