@@ -171,6 +171,8 @@ input, .numInp, .lgBtn {
   border: 1px solid #eeedf2;
   border-radius: 4px;
   padding: 22px 20px;
+  outline: none;
+  transition-duration: 0.3s;
 }
 
 
